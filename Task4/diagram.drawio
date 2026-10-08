@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="future-infrastructure" name="Автоматизация развёртывания">
+    <mxGraphModel dx="2800" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2800" pageHeight="2040" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cloud" value="Yandex Cloud · учебный каталог" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=29;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fillColor=none;verticalAlign=top;spacingTop=15;fontStyle=1;" vertex="1" parent="1" infrastructureKind="group">
+          <mxGeometry x="70" y="430" width="2660" height="1460" as="geometry" />
+        </mxCell>
+        <mxCell id="group-finance" value="Финтех" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=29;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fillColor=none;verticalAlign=top;spacingTop=15;fontStyle=1;" vertex="1" parent="1" infrastructureKind="group">
+          <mxGeometry x="110" y="640" width="615" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="group-ai" value="Медицинский ИИ" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=29;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fillColor=none;verticalAlign=top;spacingTop=15;fontStyle=1;" vertex="1" parent="1" infrastructureKind="group">
+          <mxGeometry x="765" y="640" width="615" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="group-office" value="Головной офис" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=29;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fillColor=none;verticalAlign=top;spacingTop=15;fontStyle=1;" vertex="1" parent="1" infrastructureKind="group">
+          <mxGeometry x="1420" y="640" width="615" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="group-platform" value="Платформа данных" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=29;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;fillColor=none;verticalAlign=top;spacingTop=15;fontStyle=1;" vertex="1" parent="1" infrastructureKind="group">
+          <mxGeometry x="2075" y="640" width="615" height="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-network-finance-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.005813953488372093;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-finance-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="600" as="sourcePoint" />
+            <mxPoint x="142" y="902" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="125" y="902" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-finance-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-finance-primary" target="node-finance-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417.5" y="932" as="sourcePoint" />
+            <mxPoint x="417.5" y="959" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-finance-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-finance-primary" target="system-finance-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="271" y="1065" as="sourcePoint" />
+            <mxPoint x="271" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-finance-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-finance-primary" target="data-finance-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="564" y="1065" as="sourcePoint" />
+            <mxPoint x="564" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-finance-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.005813953488372093;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-finance-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="600" as="sourcePoint" />
+            <mxPoint x="142" y="1252" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="125" y="1252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-finance-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-finance-reserve" target="node-finance-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417.5" y="1282" as="sourcePoint" />
+            <mxPoint x="417.5" y="1309" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-finance-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-finance-reserve" target="system-finance-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="271" y="1415" as="sourcePoint" />
+            <mxPoint x="271" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-finance-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-finance-reserve" target="data-finance-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="564" y="1415" as="sourcePoint" />
+            <mxPoint x="564" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-ai-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.2596899224806202;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-ai-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="600" as="sourcePoint" />
+            <mxPoint x="797" y="902" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="902" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-ai-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-ai-primary" target="node-ai-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1072.5" y="932" as="sourcePoint" />
+            <mxPoint x="1072.5" y="959" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-ai-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-ai-primary" target="system-ai-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="926" y="1065" as="sourcePoint" />
+            <mxPoint x="926" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-ai-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-ai-primary" target="data-ai-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1219" y="1065" as="sourcePoint" />
+            <mxPoint x="1219" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-ai-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.2596899224806202;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-ai-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="600" as="sourcePoint" />
+            <mxPoint x="797" y="1252" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="1252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-ai-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-ai-reserve" target="node-ai-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1072.5" y="1282" as="sourcePoint" />
+            <mxPoint x="1072.5" y="1309" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-ai-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-ai-reserve" target="system-ai-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="926" y="1415" as="sourcePoint" />
+            <mxPoint x="926" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-ai-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-ai-reserve" target="data-ai-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1219" y="1415" as="sourcePoint" />
+            <mxPoint x="1219" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-office-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5135658914728682;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-office-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1435" y="600" as="sourcePoint" />
+            <mxPoint x="1452" y="902" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1435" y="902" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-office-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-office-primary" target="node-office-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1727.5" y="932" as="sourcePoint" />
+            <mxPoint x="1727.5" y="959" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-office-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-office-primary" target="system-office-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1581" y="1065" as="sourcePoint" />
+            <mxPoint x="1581" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-office-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-office-primary" target="data-office-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1874" y="1065" as="sourcePoint" />
+            <mxPoint x="1874" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-office-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5135658914728682;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-office-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1435" y="600" as="sourcePoint" />
+            <mxPoint x="1452" y="1252" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1435" y="1252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-office-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-office-reserve" target="node-office-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1727.5" y="1282" as="sourcePoint" />
+            <mxPoint x="1727.5" y="1309" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-office-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-office-reserve" target="system-office-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1581" y="1415" as="sourcePoint" />
+            <mxPoint x="1581" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-office-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-office-reserve" target="data-office-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1874" y="1415" as="sourcePoint" />
+            <mxPoint x="1874" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-platform-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7674418604651163;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-platform-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2090" y="600" as="sourcePoint" />
+            <mxPoint x="2107" y="902" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2090" y="902" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-platform-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-platform-primary" target="node-platform-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2382.5" y="932" as="sourcePoint" />
+            <mxPoint x="2382.5" y="959" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-platform-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-platform-primary" target="system-platform-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2236" y="1065" as="sourcePoint" />
+            <mxPoint x="2236" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-platform-primary" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-platform-primary" target="data-platform-primary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2529" y="1065" as="sourcePoint" />
+            <mxPoint x="2529" y="1092" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-network-platform-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7674418604651163;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="network" target="subnet-platform-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2090" y="600" as="sourcePoint" />
+            <mxPoint x="2107" y="1252" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2090" y="1252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-subnet-platform-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="subnet-platform-reserve" target="node-platform-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2382.5" y="1282" as="sourcePoint" />
+            <mxPoint x="2382.5" y="1309" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-system-platform-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.23411978221415608;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-platform-reserve" target="system-platform-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2236" y="1415" as="sourcePoint" />
+            <mxPoint x="2236" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-data-platform-reserve" value="" style="edgeStyle=none;html=0;rounded=0;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;exitX=0.7658802177858439;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="node-platform-reserve" target="data-platform-reserve">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2529" y="1415" as="sourcePoint" />
+            <mxPoint x="2529" y="1442" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="Автоматизация развёртывания инфраструктуры" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=40;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;spacing=0;" vertex="1" parent="1" infrastructureKind="text">
+          <mxGeometry x="70" y="30" width="2660" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Будущее 2.0 · учебный запуск в Yandex Cloud" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=28;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;spacing=0;" vertex="1" parent="1" infrastructureKind="text">
+          <mxGeometry x="70" y="100" width="2660" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-managed" value="Сплошная рамка — создаёт Terraform" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed">
+          <mxGeometry x="200" y="164" width="1050" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-manual" value="Пунктир — существующие системы или ручная настройка" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="1370" y="164" width="1220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="administrator" value="Администратор&#10;SSH с разрешённого адреса /32" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=25;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="100" y="265" width="720" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="clinic" value="Клиники — существующая локальная система&#10;PowerBuilder, SQL Server 2008, Apache Camel" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="970" y="265" width="890" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="powerbi" value="Существующий Power BI&#10;Подключение к витринам — вручную" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="2010" y="265" width="680" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="network" value="Сеть future-task4-network&#10;Основные узлы: ru-central1-a · Резервные узлы: ru-central1-d" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=25;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_network.project">
+          <mxGeometry x="110" y="520" width="2580" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="access-finance" value="Группа доступа для обоих узлов&#10;SSH — только администратор&#10;Обмен узлов — внутри своей среды&#10;HTTPS — от платформы данных" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_security_group.environment[&quot;finance&quot;]">
+          <mxGeometry x="142" y="707" width="551" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-finance-primary" value="Основной: подсеть 10.10.1.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;finance-primary&quot;]">
+          <mxGeometry x="142" y="872" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-finance-primary" value="finance-primary&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;finance-primary&quot;]">
+          <mxGeometry x="142" y="959" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-finance-primary" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;finance-primary&quot;]">
+          <mxGeometry x="142" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-finance-primary" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;finance-primary&quot;]">
+          <mxGeometry x="435" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-finance-reserve" value="Резервный: подсеть 10.10.2.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;finance-reserve&quot;]">
+          <mxGeometry x="142" y="1222" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-finance-reserve" value="finance-reserve&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;finance-reserve&quot;]">
+          <mxGeometry x="142" y="1309" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-finance-reserve" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;finance-reserve&quot;]">
+          <mxGeometry x="142" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-finance-reserve" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;finance-reserve&quot;]">
+          <mxGeometry x="435" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="applications-finance" value="Установка вручную&#10;Golang и Java&#10;PostgreSQL&#10;Финансовые операции" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="142" y="1557" width="551" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="access-ai" value="Группа доступа для обоих узлов&#10;SSH — только администратор&#10;Обмен узлов — внутри своей среды&#10;HTTPS — от платформы данных" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_security_group.environment[&quot;ai&quot;]">
+          <mxGeometry x="797" y="707" width="551" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-ai-primary" value="Основной: подсеть 10.20.1.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;ai-primary&quot;]">
+          <mxGeometry x="797" y="872" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ai-primary" value="ai-primary&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;ai-primary&quot;]">
+          <mxGeometry x="797" y="959" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-ai-primary" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;ai-primary&quot;]">
+          <mxGeometry x="797" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-ai-primary" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;ai-primary&quot;]">
+          <mxGeometry x="1090" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-ai-reserve" value="Резервный: подсеть 10.20.2.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;ai-reserve&quot;]">
+          <mxGeometry x="797" y="1222" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-ai-reserve" value="ai-reserve&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;ai-reserve&quot;]">
+          <mxGeometry x="797" y="1309" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-ai-reserve" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;ai-reserve&quot;]">
+          <mxGeometry x="797" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-ai-reserve" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;ai-reserve&quot;]">
+          <mxGeometry x="1090" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="applications-ai" value="Установка вручную&#10;Python&#10;S3-совместимое хранилище&#10;Модели и результаты анализа" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="797" y="1557" width="551" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="access-office" value="Группа доступа для обоих узлов&#10;SSH — только администратор&#10;Обмен узлов — внутри своей среды&#10;HTTPS — от платформы данных" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_security_group.environment[&quot;office&quot;]">
+          <mxGeometry x="1452" y="707" width="551" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-office-primary" value="Основной: подсеть 10.30.1.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;office-primary&quot;]">
+          <mxGeometry x="1452" y="872" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-office-primary" value="office-primary&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;office-primary&quot;]">
+          <mxGeometry x="1452" y="959" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-office-primary" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;office-primary&quot;]">
+          <mxGeometry x="1452" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-office-primary" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;office-primary&quot;]">
+          <mxGeometry x="1745" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-office-reserve" value="Резервный: подсеть 10.30.2.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;office-reserve&quot;]">
+          <mxGeometry x="1452" y="1222" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-office-reserve" value="office-reserve&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;office-reserve&quot;]">
+          <mxGeometry x="1452" y="1309" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-office-reserve" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;office-reserve&quot;]">
+          <mxGeometry x="1452" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-office-reserve" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;office-reserve&quot;]">
+          <mxGeometry x="1745" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="applications-office" value="Установка вручную&#10;Внутренние приложения&#10;PostgreSQL&#10;Персонал, имущество и расходы" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="1452" y="1557" width="551" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="access-platform" value="Группа доступа для обоих узлов&#10;SSH — только администратор&#10;Обмен узлов — внутри своей среды" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_security_group.environment[&quot;platform&quot;]">
+          <mxGeometry x="2107" y="707" width="551" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-platform-primary" value="Основной: подсеть 10.40.1.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;platform-primary&quot;]">
+          <mxGeometry x="2107" y="872" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-platform-primary" value="platform-primary&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;platform-primary&quot;]">
+          <mxGeometry x="2107" y="959" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-platform-primary" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;platform-primary&quot;]">
+          <mxGeometry x="2107" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-platform-primary" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;platform-primary&quot;]">
+          <mxGeometry x="2400" y="1092" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="subnet-platform-reserve" value="Резервный: подсеть 10.40.2.0/24" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_vpc_subnet.node[&quot;platform-reserve&quot;]">
+          <mxGeometry x="2107" y="1222" width="551" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="node-platform-reserve" value="platform-reserve&#10;2 ядра, доля 20% · память 2 ГБ&#10;NAT: публичный IP-адрес" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_instance.node[&quot;platform-reserve&quot;]">
+          <mxGeometry x="2107" y="1309" width="551" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="system-platform-reserve" value="Системный диск&#10;20 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.system[&quot;platform-reserve&quot;]">
+          <mxGeometry x="2107" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data-platform-reserve" value="Диск данных&#10;10 ГБ, HDD" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=22;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" infrastructureKind="managed" terraformAddress="yandex_compute_disk.data[&quot;platform-reserve&quot;]">
+          <mxGeometry x="2400" y="1442" width="258" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="applications-platform" value="Установка вручную&#10;Airflow, Dremio, Nessie&#10;Iceberg, DataHub&#10;S3-совместимое хранилище" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="2107" y="1557" width="551" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="manual-settings" value="Вручную: подключение приложений к данным, монтирование дисков, роли доступа,&#10;соединения с клиниками и Power BI, репликация, резервные копии и переключение на резервные узлы." style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=24;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;dashed=1;dashPattern=7 5;" vertex="1" parent="1" infrastructureKind="manual">
+          <mxGeometry x="110" y="1795" width="2580" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="totals" value="Terraform создаёт: 1 сеть · 8 подсетей · 4 группы доступа · 8 виртуальных машин · 16 дисков" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;spacing=0;" vertex="1" parent="1" infrastructureKind="text">
+          <mxGeometry x="90" y="1920" width="2620" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" value="Учебные размеры проверяют создание инфраструктуры. Рабочие приложения устанавливаются после подбора ресурсов под их нагрузку." style="html=0;whiteSpace=wrap;fontFamily=Arial;fontColor=#000000;fontSize=23;fontStyle=0;align=center;verticalAlign=middle;spacing=8;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;text;strokeColor=none;fillColor=none;spacing=0;" vertex="1" parent="1" infrastructureKind="text">
+          <mxGeometry x="90" y="1972" width="2620" height="36" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
