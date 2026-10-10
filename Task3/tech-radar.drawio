@@ -71,8 +71,8 @@
         <mxCell id="technology-5" value="5" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontColor=#000000;fontStyle=1;align=center;verticalAlign=middle;spacing=0;shadow=0;shape=ellipse;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" radarKind="point" technologyNumber="5" technologyName="Power BI" quadrant="tools" ring="I">
           <mxGeometry x="765.995" y="738.005" width="46" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="technology-6" value="6" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontColor=#000000;fontStyle=1;align=center;verticalAlign=middle;spacing=0;shadow=0;shape=ellipse;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" radarKind="point" technologyNumber="6" technologyName="Apache Camel" quadrant="tools" ring="IV">
-          <mxGeometry x="1087.558" y="484.11" width="46" height="46" as="geometry" />
+        <mxCell id="technology-6" value="6" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontColor=#000000;fontStyle=1;align=center;verticalAlign=middle;spacing=0;shadow=0;shape=ellipse;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" radarKind="point" technologyNumber="6" technologyName="Apache Camel" quadrant="tools" ring="I">
+          <mxGeometry x="822.563" y="681.437" width="46" height="46" as="geometry" />
         </mxCell>
         <mxCell id="technology-7" value="7" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=23;fontColor=#000000;fontStyle=1;align=center;verticalAlign=middle;spacing=0;shadow=0;shape=ellipse;strokeColor=#000000;strokeWidth=2;fillColor=#FFFFFF;" vertex="1" parent="1" radarKind="point" technologyNumber="7" technologyName="Apache Airflow" quadrant="tools" ring="I">
           <mxGeometry x="918.141" y="769.707" width="46" height="46" as="geometry" />
@@ -185,7 +185,7 @@
         <mxCell id="legend-6-name" value="6. Apache Camel" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontColor=#000000;fontStyle=1;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="legend">
           <mxGeometry x="1390" y="632" width="1140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="legend-6-scenario" value="Счета, посещения и обмен клиники с ИИ" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontColor=#000000;fontStyle=0;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="scenario">
+        <mxCell id="legend-6-scenario" value="Обмен между направлениями, преобразования и повторы" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontColor=#000000;fontStyle=0;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="scenario">
           <mxGeometry x="1425" y="662" width="1105" height="28" as="geometry" />
         </mxCell>
         <mxCell id="legend-7-name" value="7. Apache Airflow" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontColor=#000000;fontStyle=1;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="legend">
@@ -239,7 +239,7 @@
         <mxCell id="legend-14-name" value="14. PostgreSQL" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontColor=#000000;fontStyle=1;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="legend">
           <mxGeometry x="1390" y="1184" width="1140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="legend-14-scenario" value="Операции финтеха и внутренний учёт" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontColor=#000000;fontStyle=0;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="scenario">
+        <mxCell id="legend-14-scenario" value="Данные направлений и состояние обмена" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=22;fontColor=#000000;fontStyle=0;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="scenario">
           <mxGeometry x="1425" y="1214" width="1105" height="28" as="geometry" />
         </mxCell>
         <mxCell id="legend-15-name" value="15. S3-совместимое объектное хранилище" style="html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=24;fontColor=#000000;fontStyle=1;align=left;verticalAlign=middle;spacing=0;shadow=0;text;strokeColor=none;fillColor=none;" vertex="1" parent="1" radarKind="legend">
